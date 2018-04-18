@@ -34,7 +34,11 @@
   )
 
 (defun turtletaro/init-youdao-dictionary()
-  (use-package youdao-dictionary)
+  (use-package youdao-dictionary
+    :defer t 
+    :init
+    (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
+    )
   )
 
 

@@ -31,7 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     pythonp
+     python
      ;evernote
      games
      sql
@@ -49,7 +49,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     ;ivy
+     
      auto-completion
      better-defaults
      emacs-lisp
@@ -339,6 +339,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
         "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
 
   (setq exec-path-from-shell-check-startup-files nil)
+
   )
 
 (defun dotspacemacs/user-config ()
@@ -350,6 +351,8 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq powerline-default-separator 'arrow)
   (setq ns-use-srgb-colorspace nil)
+  (evilified-state-evilify-map occur-mode-map
+    :mode occur-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
