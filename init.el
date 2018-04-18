@@ -31,7 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     python
+     pythonp
      ;evernote
      games
      sql
@@ -49,6 +49,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
+     ;ivy
      auto-completion
      better-defaults
      emacs-lisp
@@ -60,6 +61,7 @@ values."
      ;;        shell-default-position 'bottom)
      ;spell-checking
      syntax-checking
+     turtletaro
      ;; version-control
      ;;evernote
      )
@@ -76,7 +78,7 @@ values."
                                       reveal-in-osx-finder
                                       expand-region
                                       org-pomodoro
-                                      youdao-dictionary
+                                      ;youdao-dictionary
                                       erc-social-graph
                                       
                                       )
