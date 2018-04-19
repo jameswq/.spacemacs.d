@@ -30,7 +30,9 @@
 ;;; Code:
 
 (defconst turtletaro-packages
-  '(youdao-dictionary)
+  '(youdao-dictionary
+    company
+    )
   )
 
 (defun turtletaro/init-youdao-dictionary()
@@ -41,5 +43,8 @@
     )
   )
 
+(defun turtletaro/post-init-company()
+  (setq company-minimum-prefix-length 2)
+  )
 
 ;;; packages.el ends here

@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     graphviz
      python
      ;evernote
      games
@@ -352,6 +353,7 @@ you should place your code here."
   (setq ns-use-srgb-colorspace nil)
   (evilified-state-evilify-map occur-mode-map
     :mode occur-mode)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
